@@ -30,7 +30,9 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t havok1177/docker-graphql:0.0.2 .
+        docker build -t havok1177/docker-graphql:latest .
         
     - name: Push docker image
       run: |
         docker push havok1177/docker-graphql:0.0.2
+        docker push havok1177/docker-graphql:latest
